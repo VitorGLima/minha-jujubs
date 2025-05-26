@@ -1,0 +1,224 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Emilys+Candy&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Emilys+Candy&family=Princess+Sofia&display=swap');
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+body{
+    background-color:var(--cor2);
+}
+
+header{
+
+  background-color:var(--cor0);
+  min-height: 150px;
+  padding-top: 15px;
+  text-align: center;
+  margin: auto;
+}
+
+header> h1{
+  font-family: var(--fonte-pricipal);
+  margin: 30px;
+  color:var(--cor3);
+  font-size: 2em;
+  font-weight: bolder;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.434);
+}
+
+header > p {
+  font-family: var(--fonte-pricipal);
+  color:var(--cor3);
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: bold;
+  max-width: 600px;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-bottom: 40px;
+  margin: auto;
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.433);
+}
+
+nav{
+  font-family: var(--fonte-pricipal);
+  background-color: var(--cor1);
+  padding: 10px;
+  text-shadow: 1px 1.5px 0px rgba(0, 0, 0, 0.418);
+} 
+
+nav a {
+color:var(--cor3);
+padding:5px;
+border-radius: 8px;
+text-decoration: none;
+font-weight: bold;
+transition-duration: .5s;
+}
+
+nav a:hover {
+  background-color: var(--cor2);
+}
+
+main{
+  background-color:var(--cor1);
+  max-width: 1000px;
+  min-height: 350px;
+  margin: auto;
+  margin-bottom:10px;
+  padding: 50px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.516) 2px 2px 2px 2px;
+}
+
+main,p,a,ul,li{
+    color:rgba(0, 0, 0, 0.61);
+}
+
+main h1 {
+    color: black;
+    font-size: 2em;
+    font-weight: bolder;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.26);
+}
+
+main h2 {
+    color: black;
+    font-size: 1.5em;
+    font-weight: bolder;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.26);
+}
+
+main p {
+  font-family: var(--fonte-pricipal);
+    color: var(--cor3);
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.26);
+}
+
+#jt{
+    background-color: var(--cor0);
+    max-width: 300px;
+    margin: auto;
+    padding: 10px;
+    border-radius: 8px 8px ;    
+    box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.301);
+}
+ #jt img{
+  width: 100%;
+  height: 300px;
+  aspect-ratio:1/1;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 3.5px 3.5px rgba(0, 0, 0, 0.321);
+}
+
+#juntos{
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* 2 colunas */
+  gap: 8px;
+  max-width: 400px;
+  margin: auto;
+  margin-bottom: 15px;
+  margin-top: 10px;
+  padding: 10px;
+  background-color:var(--cor0);/* #314bf58f/#314BF5/#fee9e9/#1a3869*/
+  border-radius: 8px;
+  box-shadow: 3.5px 3.5px rgba(0, 0, 0, 0.321);
+}
+
+#juntos img{
+  width: 100%;
+  height: 350px;
+  aspect-ratio:1/1;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 3.5px 3.5px rgba(0, 0, 0, 0.321);
+}
+
+#hello{
+    background-color: var(--cor0);
+    max-width: 300px;
+    margin: auto;
+    padding: 10px;
+    border-radius: 8px 8px;
+    box-shadow: 3.5px 3.5px rgba(0, 0, 0, 0.321);
+}
+
+#hello img{
+  width: 100%;
+  height: 300px;
+  aspect-ratio:1/1;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 3.5px 3.5px rgba(0, 0, 0, 0.321);
+}
+
+#lista{
+background-color: #D5B2F7;
+display: block;
+padding: 10px;
+border-radius: 8px 8px ;    
+box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.301);
+}
+#lista h3 {
+    background-color: var(--cor0);
+    color: var(--cor3);
+    padding: 10px;
+    border-radius: 8px 8px 0px 0px;
+    margin: -10px -10px 0px -10px;
+    text-shadow: 1px 1.5px 0px rgba(0, 0, 0, 0.418);
+}
+
+#lista p{
+    margin: 10px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    font-size: 1.0em;
+    line-height: 2em;
+}
+#lista ol{
+    list-style-type: '\2714\00A0\00A0';
+    list-style-position: inside;
+    columns: 2;
+}
+
+#lista ul{
+  font-family: var(--fonte-pricipal);
+  color: var(--cor3);
+  text-shadow: 1px 1.5px 0px rgba(0, 0, 0, 0.418);
+}
+ footer{
+    background-color: var(--cor0);
+    color: var(--cor3);
+    text-align: center;
+    font-size: 1em;
+    padding: 5px;
+    margin: auto;
+ }
+:root{
+--fonte-padrao: arial, Helvetica, sans-serif;
+--fonte-pricipal:"Emilys Candy", serif;
+--fonte-titulo:"Princess Sofia", cursive;
+--cor0:#a5aef7;
+--cor1:#9e8ef8;
+--cor2:#934cf5;
+--cor3:#FAF784;
+} 
+footer a{
+    color: var(--cor3);
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: .5s;
+}

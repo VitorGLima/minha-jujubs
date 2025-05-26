@@ -1,0 +1,8 @@
+@charset "UTF-8";
+
+main img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.516) 2px 2px 2px 2px;
+}   
