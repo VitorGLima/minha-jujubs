@@ -1,0 +1,69 @@
+/* Estilos gerais do corpo da página */
+body {
+    margin: 0;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden; /* Mantém a tela sem rolagem */
+    color: #f1f1f1;
+    position: relative;
+    background-color: #1a1a1a;
+}
+
+/* Fundo Parallax (novo estilo) */
+.background-parallax {
+    position: fixed; /* O elemento de fundo se mantém fixo na tela */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+    /* Substitua 'sua-imagem.jpg' pelo nome do seu arquivo de imagem */
+    background-image: url('obra.png'); 
+    background-size: cover; /* A imagem cobre a tela inteira */
+    background-position: center; /* Centraliza a imagem */
+    
+    z-index: -1; /* Coloca o fundo atrás da caixa de login */
+    
+    /* Adiciona um filtro escuro para a caixa se destacar */
+    filter: brightness(50%);
+    
+    /* Animação que simula o movimento parallax */
+    animation: moveParallax 20s linear infinite;
+}
+
+/* Definição da animação */
+@keyframes moveParallax {
+    0% {
+        transform: scale(1.1) translate(0, 0);
+    }
+    25% {
+        transform: scale(1.15) translate(5%, 5%);
+    }
+    50% {
+        transform: scale(1.1) translate(0, 0);
+    }
+    75% {
+        transform: scale(1.15) translate(-5%, -5%);
+    }
+    100% {
+        transform: scale(1.1) translate(0, 0);
+    }
+}
+
+/* Caixa de Login Fixa (mantém o estilo anterior) */
+.login-container {
+    background-color: rgba(43, 43, 43, 0.8); /* Fundo semi-transparente para ver o parallax */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    max-width: 400px;
+    width: 90%;
+    position: relative;
+    backdrop-filter: blur(5px); /* Efeito de blur para destacar ainda mais o fundo */
+}
+
+/* O restante do seu CSS para o formulário pode permanecer o mesmo */
